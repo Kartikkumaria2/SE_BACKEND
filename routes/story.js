@@ -45,9 +45,9 @@ const happy = collections[3];
       
       // Randomly select one story
       const randomIndex = Math.floor(Math.random() * allStories.length);
-      const randomStory = allStories[randomIndex];
+      const randomStory = allStories[1];
 
-      console.log(allStories);
+      console.log("the stories are:"+allStories);
   
       // Send the title and story as the response
       res.json({
