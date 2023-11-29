@@ -21,7 +21,7 @@ router.post('/getimg', upload.single('photo'), (req, res) => {
   console.log(req.file);
 
   // Run the Python script
-  const python = spawn('python', [path.join(__dirname, 'predict.py')]);
+  const python = spawn('python', [path.join(__dirname, 'Predict.py')]);
 
 
   // Collect data from the script
