@@ -35,7 +35,7 @@ const happy = collections[3];
         
   
         default:
-          StoryModel = angry;
+          StoryModel = happy;
           break;
       }
       const docCount = await StoryModel.countDocuments();
