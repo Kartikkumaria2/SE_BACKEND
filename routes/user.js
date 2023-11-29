@@ -76,7 +76,7 @@ router.post('/login', async (req, res) => {
   }
 });
 router.get('/login', (req, res) => {
-  console.log(req.body);
+  console.log("hello!");
 })
 
 module.exports = router;
