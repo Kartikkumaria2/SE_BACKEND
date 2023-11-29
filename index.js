@@ -7,7 +7,11 @@ const cors = require('cors');
 require('dotenv').config()
 
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect("mongodb+srv://kkumaria:Jeemain83.9@cluster0.ui8d70c.mongodb.net/?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  
 
 const db = mongoose.connection 
 db.on('error',(error)=>console.error(error));
